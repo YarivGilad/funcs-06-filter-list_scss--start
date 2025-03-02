@@ -1,0 +1,51 @@
+.app {
+  position: relative;
+  margin-top: 7rem;
+  min-width: 55rem;
+  min-height: 55rem;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 8.5rem 1.5rem 1.5rem;
+  background: Cornsilk;
+  box-shadow: 0 0.4rem 1.5rem DimGrey;
+  border-radius: 0.4rem;
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: lightsalmon;
+    border-radius: 0.4rem 0.4rem 0 0;
+
+    .headline {
+      font-size: 5rem;
+      font-weight: normal;
+      font-family: "Griffy", cursive;
+      text-align: center;
+      color: slategray;
+    }
+
+    .white-text {
+      color: mintcream;
+    }
+  }
+
+  .loading,
+  .error-msg {
+    margin-top: 10rem;
+
+    font-size: 5rem;
+    font-weight: normal;
+    font-family: "Griffy", cursive;
+    text-align: center;
+    color: darkslateblue;
+  }
+
+  .error-msg {
+    font-family: "Expletus Sans";
+  }
+}

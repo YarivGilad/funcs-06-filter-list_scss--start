@@ -1,0 +1,56 @@
+.card {
+  padding: 2rem 2.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  :global(.thumb) {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: darksalmon;
+    transition: box-shadow 150ms, margin 150ms, padding 150ms;
+  }
+  &:hover {
+    background: paleturquoise;
+    :global(.thumb) {
+      box-shadow: 0 0.4rem 1.5rem DimGrey;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &:active {
+    background: skyblue;
+    color: white;
+    :global(.thumb) {
+      box-shadow: 0 0.4rem 1.5rem black;
+    }
+    .texts-box {
+      .paragraph {
+        color: white;
+      }
+    }
+  }
+
+  .texts-box {
+    padding-left: 2.8rem;
+    .card-title {
+      font-family: "Expletus Sans";
+      text-align: left;
+      font-size: 2.8rem;
+    }
+    .paragraph {
+      font-size: 3.8rem;
+      font-weight: 400;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      // text-align: center;
+      color: slategray;
+    }
+    .card-msg {
+      font-family: "Raleway";
+      font-size: 1.4rem;
+      max-width: 35rem;
+    }
+  }
+}
